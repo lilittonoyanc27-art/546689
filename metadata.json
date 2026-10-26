@@ -1,0 +1,6 @@
+{
+  "name": "¿Quién Quiere Ser Millonario? — Fútbol y Matemáticas (ES / ARM)",
+  "description": "Իսպաներենի և հայերենի ինտերակտիվ ֆուտբոլային և մաթեմատիկական «Ո՞վ է ուզում դառնալ միլիոնատեր» խաղ՝ ակնթարթային թարգմանությամբ, արտասանությամբ և ուսուցողական բացատրություններով։",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

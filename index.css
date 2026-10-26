@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Outfit', 'Noto Sans Armenian', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #02040b;
+    color: #f8fafc;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+}
+
+/* Classic Millionaire Studio Background */
+.millionaire-studio {
+  background-color: #020512;
+  background-image: 
+    radial-gradient(circle at 50% 30%, rgba(25, 60, 160, 0.45) 0%, rgba(10, 24, 75, 0.6) 35%, rgba(4, 9, 30, 0.95) 70%, #01030a 100%),
+    radial-gradient(ellipse 120% 70% at 50% 0%, rgba(59, 130, 246, 0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 90% 50% at 50% 100%, rgba(139, 92, 246, 0.12) 0%, transparent 50%);
+}
+
+/* Iconic TV Studio Stage Circles & Radial Grid */
+.studio-stage-rings {
+  background-image:
+    radial-gradient(circle at 50% 38%, transparent 0, transparent 90px, rgba(56, 189, 248, 0.08) 91px, transparent 93px),
+    radial-gradient(circle at 50% 38%, transparent 0, transparent 180px, rgba(99, 102, 241, 0.12) 181px, transparent 184px),
+    radial-gradient(circle at 50% 38%, transparent 0, transparent 290px, rgba(234, 179, 8, 0.08) 291px, transparent 294px),
+    radial-gradient(circle at 50% 38%, transparent 0, transparent 420px, rgba(56, 189, 248, 0.09) 421px, transparent 425px),
+    radial-gradient(circle at 50% 38%, transparent 0, transparent 580px, rgba(99, 102, 241, 0.08) 581px, transparent 585px);
+}
+
+/* Studio Overhead Spotlights */
+.studio-spotlight-left {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.25) 0%, rgba(37, 99, 235, 0.05) 50%, transparent 80%);
+}
+.studio-spotlight-right {
+  background: linear-gradient(225deg, rgba(168, 85, 247, 0.22) 0%, rgba(126, 34, 206, 0.04) 50%, transparent 80%);
+}
+.studio-center-glow {
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.22) 0%, rgba(234, 179, 8, 0.05) 45%, transparent 70%);
+}
+
+/* TV Bevel Lozenge Question & Option Boxes */
+.millionaire-box {
+  background: linear-gradient(180deg, #0d1a3a 0%, #071126 50%, #030814 100%);
+  border: 2px solid #254077;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.6);
+}
+
+.millionaire-box-hover:hover {
+  border-color: #f59e0b;
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.millionaire-box-correct {
+  background: linear-gradient(180deg, #064e3b 0%, #022c22 50%, #011a14 100%) !important;
+  border-color: #10b981 !important;
+  box-shadow: 0 0 24px rgba(16, 185, 129, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+}
+
+.millionaire-box-wrong {
+  background: linear-gradient(180deg, #7f1d1d 0%, #450a0a 50%, #200404 100%) !important;
+  border-color: #ef4444 !important;
+  box-shadow: 0 0 24px rgba(239, 68, 68, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;
+}
+
+/* Metallic Text & Glows */
+.gold-metallic-text {
+  background: linear-gradient(180deg, #fff7c2 0%, #ffd000 45%, #e6a100 70%, #996300 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.silver-metallic-text {
+  background: linear-gradient(180deg, #ffffff 0%, #d1d5db 50%, #9ca3af 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Ensure no word ever overflows */
+.text-safe {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+  min-width: 0;
+}
